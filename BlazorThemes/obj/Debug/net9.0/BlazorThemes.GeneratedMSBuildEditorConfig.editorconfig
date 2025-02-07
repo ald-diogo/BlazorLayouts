@@ -39,8 +39,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Cadastro-Turma.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cm8tVHVybWEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Lancar-Notas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFuY2FyLU5vdGFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Login-Estudante.razor]
