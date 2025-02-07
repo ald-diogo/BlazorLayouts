@@ -1,16 +1,84 @@
 ﻿@inherits LayoutComponentBase
-<div class="page">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
+<MudThemeProvider Theme="@CurrentTheme"/>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
+<MudLayout>
+    <MudAppBar Elevation="1" Color="@(_isDarkMode ? Color.Dark : Color.Primary)">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Error" Edge="Edge.Start" OnClick="@DrawerToggle" />
+        <MudSpacer />
+
+        <!-- Interruptor de Tema -->
+        <MudSwitch T="bool" Color="Color.Primary" Checked="@_isDarkMode" OnChange="ToggleTheme" />
+
+
+        <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Error" Edge="Edge.End" />
+    </MudAppBar>
+
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="2" Color="@(_isDarkMode ? Color.Dark : Color.Primary)">
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h5" Class="mt-1" Color="Color.Primary">Menu</MudText>
+        </MudDrawerHeader>
+        <NavMenu />
+    </MudDrawer>
+
+    <!-- Conteúdo principal com fundo que muda conforme o tema -->
+    <MudMainContent Class="@(_isDarkMode ? "bg-black text-white" : "bg-white text-black")">
+        @*Body*@
+    </MudMainContent>
+
+</MudLayout>
+
+@code {
+    bool _drawerOpen = true;
+    bool _isDarkMode = true; // Começa no modo escuro
+
+    MudTheme CurrentTheme => _isDarkMode ? _darkTheme : _lightTheme;
+
+    void DrawerToggle() => _drawerOpen = !_drawerOpen;
+
+    void ToggleTheme(bool value)
+    {
+        _isDarkMode = value;
+        StateHasChanged(); // Garante que o Blazor renderize a mudança
+    }
+
+    MudTheme _darkTheme = new MudTheme()
+    {
+        PaletteDark = new PaletteDark()
+        {
+            Black = "#000000",
+            Primary = "#000000",
+            Surface = "#121212",
+            Background = "#000000",
+            AppbarBackground = "#000000",
+            DrawerBackground = "#000000",
+            TextPrimary = "#FFFFFF"
+        }
+    };
+
+    MudTheme _lightTheme = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            Black = "#FFFFFF",
+            Primary = "#1976d2",
+            Surface = "#F5F5F5",
+            Background = "#FFFFFF",
+            AppbarBackground = "#F5F5F5",
+            DrawerBackground = "#FFFFFF",
+            TextPrimary = "#000000"
+        }
+    };
+}
+
+
+
+
+
+
+
+
+
+
+
+
