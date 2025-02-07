@@ -39,68 +39,72 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Cadastro-Turma.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FkYXN0cm8tVHVybWEucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Admin/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Admin/Menu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Admin/Sobre.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU29icmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Est/Login-Estudante.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0XExvZ2luLUVzdHVkYW50ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Est/Menu-Est.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0XE1lbnUtRXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Est/Sobre-Est.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXN0XFNvYnJlLUVzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Fun/Login-Funcionario.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuXExvZ2luLUZ1bmNpb25hcmlvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Fun/Menu-Fun.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuXE1lbnUtRnVuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Fun/Sobre-Fun.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuXFNvYnJlLUZ1bi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Lancar-Notas.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGFuY2FyLU5vdGFzLnJhem9y
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Cadastro-Turma.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxDYWRhc3Ryby1UdXJtYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Login-Estudante.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4tRXN0dWRhbnRlLnJhem9y
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Estatistica.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxFc3RhdGlzdGljYS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Login-Funcionario.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4tRnVuY2lvbmFyaW8ucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Lancar-Notas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxMYW5jYXItTm90YXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Login-Professor.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4tUHJvZmVzc29yLnJhem9y
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Login-Professor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxMb2dpbi1Qcm9mZXNzb3IucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Menu-Prof.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxNZW51LVByb2YucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Menu-Est.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS1Fc3QucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Plano-Aula.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxQbGFuby1BdWxhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Menu-Fun.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS1GdW4ucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Menu-Prof.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS1Qcm9mLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Menu.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVudS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Plano-Aula.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxhbm8tQXVsYS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Sobre-Est.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUtRXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Sobre-Fun.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUtRnVuLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Sobre-Prof.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUtUHJvZi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Sobre.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmUucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Prof/Sobre-Prof.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZlxTb2JyZS1Qcm9mLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/_Imports.razor]

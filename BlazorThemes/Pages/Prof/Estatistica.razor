@@ -1,6 +1,139 @@
-﻿@page "/Estatistica"
-<h3>Estatistica</h3>
+﻿@page "/estatisticas-notas"
+@using MudBlazor
+
+<MudContainer>
+    <!-- Cabeçalho -->
+    <MudPaper Class="pa-4 text-center" Style="background-color: #007bff; color: white;">
+        <MudText Typo="Typo.h4">Estatísticas de Notas</MudText>
+        <MudText Typo="Typo.subtitle1">Analise o desempenho dos alunos de forma visual e interativa.</MudText>
+    </MudPaper>
+
+    <!-- Filtros -->
+    <MudCard Class="my-4">
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Filtros</MudText>
+            <MudGrid>
+                <MudItem xs="12" sm="6" md="3">
+                    <MudSelect Label="Ano Letivo" @bind-SelectedValue="selectedYear" T="bool">
+                        <MudSelectItem Value="2024/2025">2024/2025</MudSelectItem>
+                        <MudSelectItem Value="2023/2024">2023/2024</MudSelectItem>
+                        <MudSelectItem Value="2022/2023">2022/2023</MudSelectItem>
+                    </MudSelect>
+                </MudItem>
+
+                <MudItem xs="12" sm="6" md="3">
+                    <MudSelect Label="Curso" @bind-SelectedValue="selectedCourse" T="bool">
+                        <MudSelectItem Value="Ciências">Ciências Físicas e Biológicas</MudSelectItem>
+                        <MudSelectItem Value="Economia">Ciências Económicas e Jurídicas</MudSelectItem>
+                        <MudSelectItem Value="Humanas">Ciências Humanas</MudSelectItem>
+                    </MudSelect>
+                </MudItem>
+
+                <MudItem xs="12" sm="6" md="3">
+                    <MudSelect Label="Turma" @bind-SelectedValue="selectedClass" T="bool">
+                        <MudSelectItem Value="A">Turma A</MudSelectItem>
+                        <MudSelectItem Value="B">Turma B</MudSelectItem>
+                        <MudSelectItem Value="C">Turma C</MudSelectItem>
+                    </MudSelect>
+                </MudItem>
+
+                <MudItem xs="12" sm="6" md="3">
+                    <MudSelect Label="Disciplina" @bind-SelectedValue="selectedSubject" T="bool">
+                        <MudSelectItem Value="Matemática">Matemática</MudSelectItem>
+                        <MudSelectItem Value="Português">Português</MudSelectItem>
+                        <MudSelectItem Value="Física">Física</MudSelectItem>
+                    </MudSelect>
+                </MudItem>
+
+                <MudItem xs="12">
+                    <MudButton
+                        Variant="Variant.Filled"
+                        Color="Color.Primary"
+                        OnClick="ApplyFilters">
+                        Aplicar Filtros
+                    </MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudCardContent>
+    </MudCard>
+
+    <!-- Gráficos -->
+    <MudGrid>
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardContent>
+                    <MudText Typo="Typo.h6">Distribuição de Notas</MudText>
+                    <canvas id="gradesBarChart"></canvas>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+        <MudItem xs="12" sm="6">
+            <MudCard>
+                <MudCardContent>
+                    <MudText Typo="Typo.h6">Taxa de Aprovação</MudText>
+                    <canvas id="approvalPieChart"></canvas>
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+
+    <!-- Tabela -->
+    <MudCard Class="my-4">
+        <MudCardContent>
+            <MudText Typo="Typo.h5">Detalhes dos Alunos</MudText>
+            <MudTable Items="@students" Hover="true">
+                <HeaderContent>
+                    <MudTh>Aluno</MudTh>
+                    <MudTh>Avaliação 1</MudTh>
+                    <MudTh>Avaliação 2</MudTh>
+                    <MudTh>Média</MudTh>
+                    <MudTh>Status</MudTh>
+                </HeaderContent>
+                <RowTemplate Context="student">
+                    <MudTd>@student.Name</MudTd>
+                    <MudTd>@student.Grade1</MudTd>
+                    <MudTd>@student.Grade2</MudTd>
+                    <MudTd>@student.Average</MudTd>
+                    <MudTd>@student.Status</MudTd>
+                </RowTemplate>
+            </MudTable>
+        </MudCardContent>
+    </MudCard>
+</MudContainer>
 
 @code {
-    
+    private string selectedYear;
+    private string selectedCourse;
+    private string selectedClass;
+    private string selectedSubject;
+
+    private List<Student> students = new()
+    {
+        new Student { Name = "João Silva", Grade1 = 8.0, Grade2 = 9.0, Average = 8.5, Status = "Aprovado" },
+        new Student { Name = "Maria Oliveira", Grade1 = 5.0, Grade2 = 4.5, Average = 4.8, Status = "Reprovado" }
+    };
+
+    public object Ciências { get; set; }
+    public object Economia { get; set; }
+    public object Humanas { get; set; }
+    public object A { get; set; }
+    public object B { get; set; }
+    public object C { get; set; }
+    public object Matemática { get; set; }
+    public object Português { get; set; }
+    public object Física { get; set; }
+
+    private void ApplyFilters()
+    {
+        Console.WriteLine("Filtros aplicados!");
+    }
+
+    class Student
+    {
+        public string Name { get; set; }
+        public double Grade1 { get; set; }
+        public double Grade2 { get; set; }
+        public double Average { get; set; }
+        public string Status { get; set; }
+    }
 }
