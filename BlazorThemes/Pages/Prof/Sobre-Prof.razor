@@ -18,16 +18,16 @@
     </MudAppBar>
 
     <MudDrawer @bind-Open="drawerOpen" Position="DrawerPosition.Left" Variant="DrawerVariant.Mini">
-        <MudList>
-            <MudListItem Href="#seguranca">
+        <MudList T="bool">
+            <MudListItem Href="#seguranca" T="bool">
                 <MudIcon Icon="@Icons.Material.Filled.Security" />
                 <MudText>Segurança</MudText>
             </MudListItem>
-            <MudListItem Href="#calendario">
+            <MudListItem Href="#calendario" T="bool">
                 <MudIcon Icon="@Icons.Material.Filled.CalendarToday" />
                 <MudText>Calendário Acadêmico</MudText>
             </MudListItem>
-            <MudListItem Href="#tema">
+            <MudListItem Href="#tema" T="bool">
                 <MudIcon Icon="@Icons.Material.Filled.Brightness6" />
                 <MudText>Alternância de Tema</MudText>
             </MudListItem>
@@ -37,10 +37,10 @@
     <!-- Seções -->
     <MudPaper Class="p-4 mt-3" Elevation="2" Id="seguranca">
         <MudText Typo="Typo.h5">🔒 Segurança no Sistema</MudText>
-        <MudList>
-            <MudListItem>Senhas fortes e autenticação em duas etapas.</MudListItem>
-            <MudListItem>Proteção contra ataques (SQL Injection, XSS).</MudListItem>
-            <MudListItem>Conexões seguras (HTTPS).</MudListItem>
+        <MudList T="bool">
+            <MudListItem T="bool">Senhas fortes e autenticação em duas etapas.</MudListItem>
+            <MudListItem T="bool">Proteção contra ataques (SQL Injection, XSS).</MudListItem>
+            <MudListItem T="bool">Conexões seguras (HTTPS).</MudListItem>
         </MudList>
     </MudPaper>
 
@@ -57,7 +57,11 @@
     </MudPaper>
 
     <!-- Botão de Scroll to Top -->
-    <MudFab Icon="@Icons.Material.Filled.ArrowUpward" Color="Color.Primary" Class="mud-fab-bottom-right" OnClick="ScrollToTop" />
+    <MudFab 
+        Icon="@Icons.Material.Filled.ArrowUpward" 
+        Color="Color.Primary" 
+        Class="mud-fab-bottom-right" 
+        OnClick="ScrollToTop" />
 </MudContainer>
 
 @code {
