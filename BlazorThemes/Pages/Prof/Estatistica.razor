@@ -67,6 +67,7 @@
                 </MudCardContent>
             </MudCard>
         </MudItem>
+        
         <MudItem xs="12" sm="6">
             <MudCard>
                 <MudCardContent>
@@ -81,6 +82,7 @@
     <MudCard Class="my-4">
         <MudCardContent>
             <MudText Typo="Typo.h5">Detalhes dos Alunos</MudText>
+            
             <MudTable Items="@students" Hover="true">
                 <HeaderContent>
                     <MudTh>Aluno</MudTh>
@@ -89,6 +91,7 @@
                     <MudTh>Média</MudTh>
                     <MudTh>Status</MudTh>
                 </HeaderContent>
+                
                 <RowTemplate Context="student">
                     <MudTd>@student.Name</MudTd>
                     <MudTd>@student.Grade1</MudTd>

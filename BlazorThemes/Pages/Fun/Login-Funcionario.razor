@@ -1,6 +1,149 @@
 ﻿@page "/login_funcionario"
-<h3>Login_Funcionario</h3>
+@using MudBlazor
+@inject NavigationManager Navigation
+@inject IDialogService DialogService
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="login-container">
+    <MudPaper Class="login-form" Elevation="10" Square="false">
+        <MudCardContent>
+            <MudText
+                Typo="Typo.h3"
+                Color="Color.Secondary"
+                Class="text-center text-white font-bold">
+                Seja Bem-Vindo(a), Administrador(a)
+            </MudText>
+
+            <!-- Formulário de Login -->
+            <MudForm @ref="loginForm" Class="form-container">
+                <!-- Campo de Email -->
+                <MudTextField
+                    Label="Digite seu email"
+                    @bind-Value="email"
+                    Icon="@Icons.Material.Filled.Email"
+                    Required="true"
+                    Class="input-field" />
+
+                <!-- Campo de Senha -->
+                <MudTextField
+                    Label="Digite sua senha"
+                    @bind-Value="password"
+                    Icon="@Icons.Material.Filled.Lock"
+                    InputType="InputType.Password"
+                    Required="true"
+                    Class="input-field" />
+
+                <!-- Botão de Login -->
+                <MudButton
+                    OnClick="login"
+                    Color="Color.Default"
+                    FullWidth="true"
+                    Variant="Variant.Filled"
+                    Class="login-button">
+                    <MudIcon Icon="@Icons.Material.Filled.Login" Class="mr-2" Size="Size.Medium" />
+                    Entrar
+                </MudButton>
+
+                <!-- Link Esqueci a Senha -->
+                <MudButton
+                    Href="/recuperar-senha"
+                    Color="Color.Error"
+                    FullWidth="true"
+                    Variant="Variant.Filled"
+                    Class="forgot-password-button">
+                    <MudIcon Icon="@Icons.Material.Filled.LockReset" Class="mr-2" Size="Size.Medium" />
+                    Esqueci-me da senha
+                </MudButton>
+
+            </MudForm>
+        </MudCardContent>
+    </MudPaper>
+</MudContainer>
+
+<style>
+
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(135deg, #0f0f1a, #004080);
+    }
+
+
+    .login-form {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 5px solid rgba(255, 255, 255, 0.3);
+        padding: 40px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input-field {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+    }
+
+    .login-button, .forgot-password-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px; /* Garante espaçamento entre o ícone e o texto */
+        border-radius: 8px;
+        height: 45px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    .login-button {
+        background-color: black !important;
+        color: white;
+    }
+
+    .forgot-password-button {
+        margin-top: 10px;
+        background-color: red !important;
+        color: white;
+    }
+
+    .icon-button {
+        font-size: 20px; /* Reduz o tamanho dos ícones para manter a proporção */
+    }
+</style>
 
 @code {
-    
+    private MudForm loginForm;
+    private string email;
+    private string password;
+    private bool isLoggingIn = false;
+    public Size Small { get; set; }
+
+    private async Task login()
+    {
+        if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+        {
+            await DialogService.ShowMessageBox("Erro", "Por favor, preencha todos os campos.");
+            return;
+        }
+
+        isLoggingIn = true;
+        await Task.Delay(2000); // Simulação de progresso
+        isLoggingIn = false;
+
+        Navigation.NavigateTo("/menu");
+    }
 }

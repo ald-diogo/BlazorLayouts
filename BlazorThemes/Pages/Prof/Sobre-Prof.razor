@@ -23,10 +23,12 @@
                 <MudIcon Icon="@Icons.Material.Filled.Security" />
                 <MudText>Segurança</MudText>
             </MudListItem>
+            
             <MudListItem Href="#calendario" T="bool">
                 <MudIcon Icon="@Icons.Material.Filled.CalendarToday" />
                 <MudText>Calendário Acadêmico</MudText>
             </MudListItem>
+            
             <MudListItem Href="#tema" T="bool">
                 <MudIcon Icon="@Icons.Material.Filled.Brightness6" />
                 <MudText>Alternância de Tema</MudText>
@@ -37,6 +39,7 @@
     <!-- Seções -->
     <MudPaper Class="p-4 mt-3" Elevation="2" Id="seguranca">
         <MudText Typo="Typo.h5">🔒 Segurança no Sistema</MudText>
+        
         <MudList T="bool">
             <MudListItem T="bool">Senhas fortes e autenticação em duas etapas.</MudListItem>
             <MudListItem T="bool">Proteção contra ataques (SQL Injection, XSS).</MudListItem>
@@ -46,11 +49,13 @@
 
     <MudPaper Class="p-4 mt-3" Elevation="2" Id="calendario">
         <MudText Typo="Typo.h5">📅 Calendário Acadêmico</MudText>
+        
         <MudText>O sistema contém um calendário interativo para que os alunos e professores possam acompanhar as atividades acadêmicas.</MudText>
     </MudPaper>
 
     <MudPaper Class="p-4 mt-3" Elevation="2" Id="tema">
         <MudText Typo="Typo.h5">🌙 Alternância de Tema</MudText>
+        
         <MudButton Variant="Variant.Outlined" Color="Color.Secondary" OnClick="ToggleTheme">
             <MudIcon Icon="@Icons.Material.Filled.Brightness4" /> Alternar Tema
         </MudButton>

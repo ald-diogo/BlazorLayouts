@@ -49,9 +49,12 @@
                 <MudTh>Nota</MudTh>
                 <MudTh>Ações</MudTh>
             </HeaderContent>
+            
             <RowTemplate Context="estudante">
                 <MudTd>@estudante.Id</MudTd>
+                
                 <MudTd>@estudante.Nome</MudTd>
+                
                 <MudTd>
                     <MudTextField 
                         Type="Number" 
@@ -59,11 +62,13 @@
                         @bind-Value="estudante.Nota"
                         Min="0" Max="10"/>
                 </MudTd>
+                
                 <MudTd>
                     <MudIconButton 
                         Icon="@Icons.Material.Filled.Edit" 
                         OnClick="() => EditarEstudante(estudante.Id)"
                         Color="Color.Primary"/>
+                    
                     <MudIconButton 
                         Icon="@Icons.Material.Filled.Delete" 
                         OnClick="() => RemoverEstudante(estudante.Id)"
@@ -72,11 +77,12 @@
             </RowTemplate>
         </MudTable>
 
-        <MudButton 
-            Variant="Variant.Filled" 
-            Color="Color.Success" 
-            Class="mt-3" 
+        <MudButton
+            Variant="Variant.Filled"
+            Color="Color.Success"
+            Class="mt-3"
             OnClick="AdicionarEstudante">
+            
             <MudIcon Icon="@Icons.Material.Filled.Add"/> Cadastrar
         </MudButton>
     </MudPaper>
