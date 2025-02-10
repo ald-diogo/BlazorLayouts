@@ -45,7 +45,7 @@
 
                 <!-- Link Esqueci a Senha -->
                 <MudButton
-                    Href="/recuperar-senha"
+                    Href="/recuperar-senha-funcionario"
                     Color="Color.Error"
                     FullWidth="true"
                     Variant="Variant.Filled"
@@ -144,6 +144,6 @@
         await Task.Delay(2000); // Simulação de progresso
         isLoggingIn = false;
 
-        Navigation.NavigateTo("/menu");
+        Navigation.NavigateTo("/menu_funcionario");
     }
 }
