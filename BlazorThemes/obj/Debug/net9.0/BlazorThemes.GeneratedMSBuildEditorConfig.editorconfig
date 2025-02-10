@@ -75,6 +75,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuXE1lbnUtRnVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Fun/Recuperar-Senha-Fun.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuXFJlY3VwZXJhci1TZW5oYS1GdW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Pages/Fun/Sobre-Fun.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnVuXFNvYnJlLUZ1bi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

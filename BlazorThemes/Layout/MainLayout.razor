@@ -6,42 +6,31 @@
     <MudAppBar Elevation="1" Color="@(_isDarkMode ? Color.Dark : Color.Primary)">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Error" Edge="Edge.Start" OnClick="@DrawerToggle" />
         <MudSpacer />
-
         <!-- Interruptor de Tema -->
         <MudSwitch T="bool" Color="Color.Primary" Checked="@_isDarkMode" OnChange="ToggleTheme" />
-
-
         <MudIconButton Icon="@Icons.Material.Filled.MoreVert" Color="Color.Error" Edge="Edge.End" />
     </MudAppBar>
-
     <MudDrawer @bind-Open="_drawerOpen" Elevation="2" Color="@(_isDarkMode ? Color.Dark : Color.Primary)">
         <MudDrawerHeader>
             <MudText Typo="Typo.h5" Class="mt-1" Color="Color.Primary">Menu</MudText>
         </MudDrawerHeader>
         <NavMenu />
     </MudDrawer>
-
     <!-- Conteúdo principal com fundo que muda conforme o tema -->
     <MudMainContent Class="@(_isDarkMode ? "bg-black text-white" : "bg-white text-black")">
-        @*Body*@
+        @Body
     </MudMainContent>
-
 </MudLayout>
-
 @code {
     bool _drawerOpen = true;
     bool _isDarkMode = true; // Começa no modo escuro
-
     MudTheme CurrentTheme => _isDarkMode ? _darkTheme : _lightTheme;
-
     void DrawerToggle() => _drawerOpen = !_drawerOpen;
-
     void ToggleTheme(bool value)
     {
         _isDarkMode = value;
         StateHasChanged(); // Garante que o Blazor renderize a mudança
     }
-
     MudTheme _darkTheme = new MudTheme()
     {
         PaletteDark = new PaletteDark()
