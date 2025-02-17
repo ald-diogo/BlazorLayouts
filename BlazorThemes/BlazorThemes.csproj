@@ -46,6 +46,17 @@
       <_ContentIncludedByDefault Remove="Pages\Prof\Sobre-Prof.razor" />
       <_ContentIncludedByDefault Remove="Layout\MainLayout.razor" />
       <_ContentIncludedByDefault Remove="Layout\NavMenu.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Fun\Login-Funcionario.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Fun\Menu-Fun.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Fun\Recuperar-Senha-Fun.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Fun\Sobre-Fun.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Est\Login-Estudante.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Est\Menu-Est.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Est\Sobre-Est.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Admin\Login.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Admin\Menu.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Admin\Recuperar-Senha.razor" />
+      <_ContentIncludedByDefault Remove="Components\Account\Pages\Admin\Sobre.razor" />
     </ItemGroup>
 
 </Project>
