@@ -7,8 +7,8 @@
     <MudPaper Class="login-form" Elevation="10" Square="false">
         <MudCardContent>
             <MudText
-                Typo="Typo.h3"
-                Color="Color.Secondary"
+                Typo="Typo.h5"
+                Color="Color.Primary"
                 Class="text-center text-white font-bold">
                 Seja Bem-Vindo(a), Caro Professor(a)
             </MudText>
@@ -36,6 +36,7 @@
                 <MudButton
                     OnClick="login"
                     Color="Color.Default"
+                    Href="/menu_professor"
                     FullWidth="true"
                     Variant="Variant.Filled"
                     Class="login-button">
@@ -45,7 +46,7 @@
 
                 <!-- Link Esqueci a Senha -->
                 <MudButton
-                    Href="/recuperar_senha_prof"
+                    Href="/recuperar_senha_professor"
                     Color="Color.Error"
                     FullWidth="true"
                     Variant="Variant.Filled"
@@ -67,20 +68,20 @@
         align-items: center;
         height: 100vh;
         width: 100vw;
-        background: linear-gradient(135deg, #0f0f1a, #004080);
+        background: transparent; /* Fundo transparente */
     }
 
-
     .login-form {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border: 5px solid rgba(255, 255, 255, 0.3);
+        background: #000000; /* Fundo preto */
+        color: white; /* Texto branco */
+        border: 5px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
         padding: 40px;
         width: 100%;
         max-width: 400px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         border-radius: 15px;
         text-align: center;
+        backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
     }
 
     .form-container {
@@ -90,8 +91,9 @@
     }
 
     .input-field {
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.1); /* Transparência para os campos de entrada */
         border-radius: 8px;
+        color: white; /* Texto branco no input */
     }
 
     .login-button, .forgot-password-button {
@@ -144,6 +146,6 @@
         await Task.Delay(2000); // Simulação de progresso
         isLoggingIn = false;
 
-        Navigation.NavigateTo("/menu_prof");
+        Navigation.NavigateTo("/menu_professor");
     }
 }
