@@ -13,6 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Components\Account\Shared\" />
       <Folder Include="Data\" />
       <Folder Include="wwwroot\lib\" />
     </ItemGroup>
@@ -20,26 +21,6 @@
     <ItemGroup>
       <AdditionalFiles Include="Components\Layout\MainLayout.razor" />
       <AdditionalFiles Include="Components\Layout\NavMenu.razor" />
-      <AdditionalFiles Include="Components\Pages\Admin\Login.razor" />
-      <AdditionalFiles Include="Components\Pages\Admin\Menu.razor" />
-      <AdditionalFiles Include="Components\Pages\Admin\Recuperar-Senha.razor" />
-      <AdditionalFiles Include="Components\Pages\Admin\Sobre.razor" />
-      <AdditionalFiles Include="Components\Pages\Est\Login-Estudante.razor" />
-      <AdditionalFiles Include="Components\Pages\Est\Menu-Est.razor" />
-      <AdditionalFiles Include="Components\Pages\Est\Sobre-Est.razor" />
-      <AdditionalFiles Include="Components\Pages\Fun\Login-Funcionario.razor" />
-      <AdditionalFiles Include="Components\Pages\Fun\Menu-Fun.razor" />
-      <AdditionalFiles Include="Components\Pages\Fun\Recuperar-Senha-Fun.razor" />
-      <AdditionalFiles Include="Components\Pages\Fun\Sobre-Fun.razor" />
-      <AdditionalFiles Include="Components\Pages\Home.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Cadastro-Turma.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Estatistica.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Lancar-Notas.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Login-Professor.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Menu-Prof.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Plano-Aula.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Recuperar-Senha-Prof.razor" />
-      <AdditionalFiles Include="Components\Pages\Prof\Sobre-Prof.razor" />
     </ItemGroup>
 
     <ItemGroup>
