@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using BlazorThemes;
+using BlazorThemes.Components;
 using Microsoft.AspNetCore.Components;
 using MudBlazor.Services;
 
