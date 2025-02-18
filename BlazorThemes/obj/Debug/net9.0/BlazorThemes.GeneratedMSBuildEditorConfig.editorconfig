@@ -69,24 +69,68 @@ build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXaGVhdGhlci5y
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Auth.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEF1dGgucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/AccessDenied.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEFjY2Vzc0RlbmllZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvdW50ZXIucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ConfirmEmail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvbmZpcm1FbWFpbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEVycm9yLnJhem9y
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ConfirmEmailChange.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXENvbmZpcm1FbWFpbENoYW5nZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEhvbWUucmF6b3I=
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ForgotPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEZvcmdvdFBhc3N3b3JkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Wheather.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFdoZWF0aGVyLnJhem9y
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ForgotPasswordConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEZvcmdvdFBhc3N3b3JkQ29uZmlybWF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/InvalidPasswordReset.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEludmFsaWRQYXNzd29yZFJlc2V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/InvalidUser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXEludmFsaWRVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Lockout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvY2tvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/LoginWith2fa.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aDJmYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/LoginWithRecoveryCode.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXExvZ2luV2l0aFJlY292ZXJ5Q29kZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlZ2lzdGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/RegisterConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlZ2lzdGVyQ29uZmlybWF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ResendEmailConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2VuZEVtYWlsQ29uZmlybWF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ResetPassword.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2V0UGFzc3dvcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Pages/ResetPasswordConfirmation.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBY2NvdW50XFBhZ2VzXFJlc2V0UGFzc3dvcmRDb25maXJtYXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Dev/RiderProjects/FinalyLayouts/BlazorThemes/BlazorThemes/Components/Account/Shared/ExternalLoginPicker.razor]
