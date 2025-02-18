@@ -13,7 +13,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Components\Account\Shared\" />
       <Folder Include="Data\" />
       <Folder Include="wwwroot\lib\" />
     </ItemGroup>
