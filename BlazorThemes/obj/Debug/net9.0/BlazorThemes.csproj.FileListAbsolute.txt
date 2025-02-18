@@ -1045,10 +1045,10 @@ C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\re
 C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\uljm44ds94-ruc3115g03.gz
 C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\appsettings.Development.json
 C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\appsettings.json
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.gb600d9k5a.pdb
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.nxf96kpeeg.wasm
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.nxf96kpeeg.wasm.gz
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.gb600d9k5a.pdb.gz
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\nxcfha8jtv-nxf96kpeeg.gz
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\qjegud218b-gb600d9k5a.gz
-C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\bzzs1qt8sl-rebadgabha.gz
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.fe9odaobfr.pdb
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.k9heerjjkx.wasm
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.k9heerjjkx.wasm.gz
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\bin\Debug\net9.0\wwwroot\_framework\BlazorThemes.fe9odaobfr.pdb.gz
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\nxcfha8jtv-k9heerjjkx.gz
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\qjegud218b-fe9odaobfr.gz
+C:\Dev\RiderProjects\FinalyLayouts\BlazorThemes\BlazorThemes\obj\Debug\net9.0\compressed\bzzs1qt8sl-j0t4zpwh3k.gz
