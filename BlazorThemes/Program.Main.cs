@@ -15,8 +15,8 @@ using BlazorThemes.Components.Account;
 using BlazorThemes.Data;
 #endif
 
-namespace BlazorThemes
-{
+namespace BlazorThemes;
+
     
-}
+
 
