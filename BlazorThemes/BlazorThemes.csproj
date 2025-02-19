@@ -63,4 +63,9 @@
       <_ContentIncludedByDefault Remove="Components\Account\Pages\Admin\Sobre.razor" />
     </ItemGroup>
 
+    <PropertyGroup>
+        <DefineConstants>UseServer;UseWebAssembly</DefineConstants>
+    </PropertyGroup>
+
+
 </Project>
