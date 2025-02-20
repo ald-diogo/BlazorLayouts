@@ -3,16 +3,28 @@
 @using BlazorThemes.Components.Layout
 @using BlazorThemes
 @using BlazorThemes.Components.Account.Shared
+@using BlazorThemes.Data
+
 
 <Router AppAssembly="typeof(Program).Assembly">
     <Found Context="routeData">
+        <!-- Usando um componente de visualização de rota autorizado -->
         <AuthorizeRouteView RouteData="routeData" DefaultLayout="@typeof(Layout.MainLayout)">
             <NotAuthorized>
+                <!-- Caso não autorizado, redireciona para a página de login -->
                 <RedirectToLogin />
             </NotAuthorized>
         </AuthorizeRouteView>
-        
+
+        <!-- Componente de visualização de rota comum, caso a autorização não seja necessária -->
         <RouteView RouteData="routeData" DefaultLayout="@typeof(Layout.MainLayout)"/>
+
+        <!-- Define o foco em um elemento h1 após a navegação -->
         <FocusOnNavigate RouteData="routeData" Selector="h1"/>
     </Found>
+
+    <!-- Página não encontrada, pode ser personalizada -->
+    <NotFound>
+        <p>Página não encontrada.</p>
+    </NotFound>
 </Router>
