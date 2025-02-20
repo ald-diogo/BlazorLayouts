@@ -27,4 +27,9 @@ public class SignInManager<T>
     {
         throw new NotImplementedException();
     }
+
+    public async Task GetExternalAuthenticationSchemesAsync()
+    {
+        throw new NotImplementedException();
+    }
 }
