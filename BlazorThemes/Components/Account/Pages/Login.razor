@@ -1,6 +1,181 @@
-﻿@page "/Login"
-<h3>Login</h3>
+﻿@page "/Account/Login"
+
+@using System.ComponentModel.DataAnnotations
+@using BlazorThemes.Data
+@using Microsoft.AspNetCore.Authentication
+@using Microsoft.AspNetCore.Http
+@using Microsoft.AspNetCore.Identity
+   
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject ILogger<Login> Logger
+@inject NavigationManager NavigationManager
+
+<PageTitle>Log in</PageTitle>
+
+<MudText Typo="Typo.h3" GutterBottom="true">Log in</MudText>
+
+<MudGrid>
+    <MudItem md="6">
+        <StatusMessage Message="@errorMessage" />
+        <EditForm Model="Input" method="post" OnValidSubmit="LoginUser" FormName="login">
+            <DataAnnotationsValidator />
+
+            <MudText GutterBottom="true" Typo="Typo.body1">Use a local account to log in.</MudText>
+
+            <MudGrid>
+                <MudItem md="12">
+                    <MudTextField For="@(() => Input.Email)" @bind-Value="Input.Email"
+                                  Label="Email" Placeholder="name@example.com"
+                                  UserAttributes="@(new() { { "autocomplete", "username" }, { "aria-required", "true" } } )" />
+                </MudItem>
+                
+                <MudItem md="12">
+                    <MudTextField For="@(() => Input.Password)" @bind-Value="Input.Password"
+                                  Label="Password" InputType="InputType.Password" Placeholder="password"
+                                  UserAttributes="@(new() { { "autocomplete", "current-password" }, { "aria-required", "true" } } )" />
+                </MudItem>
+                
+                <MudItem md="12">
+                    <MudStaticCheckBox
+                        For="@(() => Input.RememberMe)"
+                        @bind-Value="Input.RememberMe">
+                        Remember me
+                    </MudStaticCheckBox>
+                </MudItem>
+                
+                <MudItem md="12">
+                    <MudStaticButton
+                        Variant="Variant.Filled"
+                        Color="Color.Primary"
+                        FullWidth="true"
+                        FormAction="FormAction.Submit">
+                        Log in
+                    </MudStaticButton>
+                </MudItem>
+            </MudGrid>
+        </EditForm>
+
+        <MudGrid Class="mt-4">
+            <MudItem md="12">
+                <MudLink Href="Account/ForgotPassword">Forgot your password?</MudLink><br />
+                <MudLink Href="@(NavigationManager.GetUriWithQueryParameters("Account/Register",
+                                   new Dictionary<string, object?> { ["ReturnUrl"] = ReturnUrl }))">
+                    Register as a new user
+                </MudLink>
+                <br />
+                <MudLink Href="Account/ResendEmailConfirmation">Resend email confirmation</MudLink>
+            </MudItem>
+        </MudGrid>
+    </MudItem>
+    
+    <MudItem md="6">
+        <MudText GutterBottom="true" Typo="Typo.body1">Use another service to log in.</MudText>
+
+        <ExternalLoginPicker />
+    </MudItem>
+</MudGrid>
 
 @code {
+    private string? errorMessage;
+
+    [CascadingParameter]
+    private HttpContext HttpContext { get; set; } = default!;
+
+    [SupplyParameterFromForm]
+    private InputModel Input { get; set; } = new();
+
+    [SupplyParameterFromQuery]
+    private string? ReturnUrl { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (HttpMethods.IsGet(HttpContext.Request.Method))
+        {
+            // Usando a string diretamente em vez de IdentityConstants.ExternalScheme
+            await HttpContext.SignOutAsync("External");
+        }
+    }
+
+
+    public async Task LoginUser()
+{
+    // Realiza o login com os dados fornecidos
+    var result = await SignInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
     
+    // Verifica se a autenticação foi bem-sucedida
+    if (result.Succeeded)
+    {
+        Logger.LogInformation("User logged in.");
+        
+        // Verifica se o ReturnUrl é válido, caso contrário, redireciona para a página inicial
+        if (!string.IsNullOrEmpty(ReturnUrl) && Uri.IsWellFormedUriString(ReturnUrl, UriKind.RelativeOrAbsolute))
+        {
+            // Log de sucesso e redirecionamento
+            Logger.LogInformation($"Redirecionando para {ReturnUrl}");
+            NavigationManager.NavigateTo(ReturnUrl);
+        }
+        else
+        {
+            // Caso o ReturnUrl seja inválido ou não fornecido, redireciona para a página inicial
+            Logger.LogWarning("ReturnUrl inválido ou nulo, redirecionando para a página inicial.");
+            NavigationManager.NavigateTo("/"); // Página inicial
+        }
+    }
+    else if (result.RequiresTwoFactor)
+    {
+        // Verifica o estado de 2FA e cria a URL com os parâmetros corretamente escapados
+        if (string.IsNullOrEmpty(ReturnUrl))
+        {
+            Logger.LogWarning("ReturnUrl está vazio. Usando valor padrão.");
+            ReturnUrl = "/";
+        }
+
+        // Construção de parâmetros para a página de 2FA
+        var parameters = new Dictionary<string, string>
+        {
+            { "returnUrl", Uri.EscapeDataString(ReturnUrl) },
+            { "rememberMe", Input.RememberMe.ToString() }
+        };
+
+        // Cria a URL para redirecionar o usuário para o fluxo de 2FA
+        var url = "Account/LoginWith2fa?" + string.Join("&", parameters.Select(p => $"{p.Key}={p.Value}"));
+        Logger.LogInformation("Redirecionando para a página de 2FA.");
+        
+        // Redireciona para a página de 2FA
+        NavigationManager.NavigateTo(url);
+    }
+    else if (result.IsLockedOut)
+    {
+        // Log de bloqueio de conta
+        Logger.LogWarning("Usuário bloqueado após múltiplas tentativas. Redirecionando para a página de bloqueio.");
+        
+        // Redireciona para a página de bloqueio de conta
+        NavigationManager.NavigateTo("/Account/Lockout");
+    }
+    else
+    {
+        // Caso o login tenha falhado, exibe a mensagem de erro
+        errorMessage = "Erro: Tentativa de login inválida.";
+        Logger.LogWarning(errorMessage);
+    }
 }
+
+
+
+    private sealed class InputModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; } = "";
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; } = "";
+
+        [Display(Name = "Remember me?")]
+        public bool RememberMe { get; set; }
+    }
+}
+
+
