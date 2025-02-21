@@ -47,4 +47,14 @@ public class SignInManager<T>
     {
         throw new NotImplementedException();
     }
+
+    public async Task<bool> IsTwoFactorClientRememberedAsync(ApplicationUser user)
+    {
+        throw new NotImplementedException();
+    }
+
+    public async Task ForgetTwoFactorClientAsync()
+    {
+        throw new NotImplementedException();
+    }
 }
