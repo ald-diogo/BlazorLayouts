@@ -32,4 +32,9 @@ public class SignInManager<T>
     {
         throw new NotImplementedException();
     }
+
+    public async Task RefreshSignInAsync(ApplicationUser user)
+    {
+        throw new NotImplementedException();
+    }
 }

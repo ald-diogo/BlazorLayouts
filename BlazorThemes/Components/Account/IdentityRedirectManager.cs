@@ -10,4 +10,9 @@ public class IdentityRedirectManager
     {
         throw new NotImplementedException();
     }
+
+    public void RedirectToCurrentPageWithStatus(string yourPasswordHasBeenChanged, HttpContext httpContext)
+    {
+        throw new NotImplementedException();
+    }
 }
