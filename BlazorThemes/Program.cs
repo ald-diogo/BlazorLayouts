@@ -42,4 +42,9 @@ public class SignInManager<T>
     {
         throw new NotImplementedException();
     }
+
+    public async Task<UserLoginInfo> GetExternalLoginInfoAsync(string userId)
+    {
+        throw new NotImplementedException();
+    }
 }
