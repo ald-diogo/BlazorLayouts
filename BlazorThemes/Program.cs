@@ -19,6 +19,7 @@ builder.Services.AddScoped<UserManager<ApplicationUser>>();
 
 builder.Services.AddMudServices();
 
+
 await builder.Build().RunAsync();
 
 public class SignInManager<T>
@@ -58,3 +59,4 @@ public class SignInManager<T>
         throw new NotImplementedException();
     }
 }
+
