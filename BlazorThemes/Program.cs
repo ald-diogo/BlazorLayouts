@@ -37,4 +37,9 @@ public class SignInManager<T>
     {
         throw new NotImplementedException();
     }
+
+    public async Task SignOutAsync()
+    {
+        throw new NotImplementedException();
+    }
 }

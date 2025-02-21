@@ -15,4 +15,9 @@ public class IdentityRedirectManager
     {
         throw new NotImplementedException();
     }
+
+    public void RedirectToCurrentPage()
+    {
+        throw new NotImplementedException();
+    }
 }
