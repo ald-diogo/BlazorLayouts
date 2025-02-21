@@ -20,4 +20,9 @@ public class IdentityRedirectManager
     {
         throw new NotImplementedException();
     }
+
+    public void RedirectTo(string accountManageChangepassword)
+    {
+        throw new NotImplementedException();
+    }
 }
