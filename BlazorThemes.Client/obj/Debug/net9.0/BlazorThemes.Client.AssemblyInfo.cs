@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorThemes.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f864dfd6ba8d2a36310100e623c1682aeabb6124")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c0a443c3e5bb297714d485c616911540f3c96fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorThemes.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorThemes.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
