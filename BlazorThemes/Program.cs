@@ -58,5 +58,12 @@ public class SignInManager<T>
     {
         throw new NotImplementedException();
     }
+
+    public object ConfigureExternalAuthenticationProperties(string provider, string redirectUrl)
+    {
+        throw new NotImplementedException();
+    }
+
+    public object UserManager { get; set; }
 }
 

@@ -154,6 +154,7 @@
     internal interface IEmailSender<T>
     {
         Task SendConfirmationLinkAsync(ApplicationUser applicationUser, string s, string encode);
+        Task SendEmailAsync(string s, string confirmYourEmail, string s1);
     }
 
 }
